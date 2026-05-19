@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penn Rising XI | Contact</title>
+  <meta name="description" content="Contact Penn Rising XI for player interest, recruiting questions, and tryout information.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Penn Rising XI home">
+        <img src="assets/2026_PennRisingXI_Logo.webp" alt="Penn Rising XI crest">
+        <div class="brand-mark">
+          <p class="brand-title">Penn Rising XI</p>
+          <p class="brand-subtitle">Semper Unum</p>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle><span></span></button>
+      <div class="nav-menu" data-nav-menu>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html" data-nav-link>Home</a>
+          <a href="about.html" data-nav-link>About</a>
+          <a href="pathway.html" data-nav-link>Pathway</a>
+          <a href="tryouts.html" data-nav-link>Tryouts</a>
+          <a href="teams.html" data-nav-link>Teams</a>
+          <a href="news.html" data-nav-link>News</a>
+          <a href="contact.html" data-nav-link>Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn btn-secondary" href="#player-form">Player Interest Form</a>
+          <a class="btn btn-primary" href="tryouts.html">Register for Tryouts</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-contact">
+      <div class="container">
+        <div class="breadcrumbs"><span><a href="index.html">Home</a></span><span>/</span><span>Contact</span></div>
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">Contact</span>
+          <h1>Serious player inquiry starts here.</h1>
+          <p>This page is built for families, recruits, and players who want to connect with Penn Rising XI directly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="player-form">
+      <div class="container split-layout">
+        <div data-reveal>
+          <div class="photo-slab">
+            <img src="assets/WeRise.jpg" alt="Penn Rising XI player with We Rise signage">
+          </div>
+        </div>
+
+        <form class="form-panel" data-reveal>
+          <span class="eyebrow">Player Inquiry</span>
+          <h3>Interested Player Form</h3>
+          <p>Use this form for pathway questions, tryout follow-up, or general player interest.</p>
+          <div class="form-grid">
+            <div class="field">
+              <label for="player-name">Player name</label>
+              <input id="player-name" name="player-name" type="text" placeholder="First and last name">
+            </div>
+            <div class="field">
+              <label for="parent-name">Parent name</label>
+              <input id="parent-name" name="parent-name" type="text" placeholder="Parent or guardian">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="family@example.com">
+            </div>
+            <div class="field">
+              <label for="birth-year">Birth year</label>
+              <select id="birth-year" name="birth-year">
+                <option value="">Select year</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+              </select>
+            </div>
+            <div class="field field-full">
+              <label for="current-club">Current club</label>
+              <input id="current-club" name="current-club" type="text" placeholder="Current team or club">
+            </div>
+            <div class="field field-full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Share your player’s goals, age group, or any questions for the club."></textarea>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Penn Rising XI</h3>
+          <p>A unified club for the Greater Lehigh Valley focused on player development, elite competition, and serious long-term standards.</p>
+          <p><strong>Semper Unum</strong></p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="about.html">About / Our Story</a></li>
+            <li><a href="pathway.html">Pathway</a></li>
+            <li><a href="tryouts.html">Tryouts</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Stay Connected</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="tryouts.html">Tryout Information</a></li>
+          </ul>
+          <form class="newsletter">
+            <input type="email" placeholder="Email for club updates" aria-label="Email for newsletter">
+            <button class="btn btn-primary" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Penn Rising XI. Demo website for concept presentation.</span>
+        <span>Built with real club photography and static HTML/CSS/JS.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
