@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Penn Rising XI | Contact</title>
-  <meta name="description" content="Contact Penn Rising XI for player interest and club questions.">
+  <title>Penn Rising XI | FAQ</title>
+  <meta name="description" content="Frequently asked questions, player interest, and club contact information for Penn Rising XI.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -12,93 +12,159 @@
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Penn Rising XI home">
         <img src="assets/2026_PennRisingXI_Logo.webp" alt="Penn Rising XI crest">
-        <div><p class="brand-title">Penn Rising XI</p><p class="brand-subtitle">Semper Unum</p></div>
+        <div>
+          <p class="brand-title">Penn Rising XI</p>
+          <p class="brand-subtitle">Semper Unum</p>
+        </div>
       </a>
       <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle><span></span></button>
       <div class="nav-menu" data-nav-menu>
         <nav class="nav-links" aria-label="Main navigation">
           <a href="index.html" data-nav-link>Home</a>
-          <a href="about.html" data-nav-link>About</a>
+          <a href="about.html" data-nav-link>Philosophy</a>
+          <a href="pathway.html" data-nav-link>Mission</a>
+          <a href="teams.html" data-nav-link>The Badge</a>
           <a href="tryouts.html" data-nav-link>Tryouts</a>
-          <a href="teams.html" data-nav-link>Teams</a>
-          <a href="news.html" data-nav-link>News</a>
-          <a href="contact.html" data-nav-link>Contact</a>
+          <a href="contact.html" data-nav-link>FAQ</a>
         </nav>
-        <div class="nav-actions"><a class="btn btn-primary" href="tryouts.html">Register for Tryouts</a></div>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="tryouts.html">Join the Rising</a>
+        </div>
       </div>
     </div>
   </header>
+
   <main>
-    <section class="page-hero">
+    <section class="page-hero faq-hero">
       <div class="container page-hero-inner">
-        <div class="breadcrumbs"><span><a href="index.html">Home</a></span><span>/</span><span>Contact</span></div>
+        <div class="breadcrumbs"><span><a href="index.html">Home</a></span><span>/</span><span>FAQ</span></div>
         <div class="section-header" data-reveal>
-          <h1>Contact</h1>
-          <p>Use the form below for player interest, tryout questions, or general club inquiries.</p>
+          <span class="eyebrow">Questions</span>
+          <h1>your questions, answered</h1>
+          <p>This page now follows the live site more closely by combining practical FAQ information with a clear contact point for interested families.</p>
         </div>
       </div>
     </section>
+
+    <section class="section-tight">
+      <div class="container faq-list">
+        <article class="faq-item open" data-reveal>
+          <button class="faq-trigger" type="button" data-accordion-trigger aria-expanded="true">
+            <span class="faq-question">Why was Penn Rising XI created?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Penn Rising XI was created to reduce fragmentation, keep more top players local, and provide a clearer development pathway across the region.
+          </div>
+        </article>
+        <article class="faq-item" data-reveal>
+          <button class="faq-trigger" type="button" data-accordion-trigger aria-expanded="false">
+            <span class="faq-question">What does the unified structure change for families?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Families get a more consistent club identity, stronger pathway communication, and better alignment between age groups, coaching standards, and competitive platforms.
+          </div>
+        </article>
+        <article class="faq-item" data-reveal>
+          <button class="faq-trigger" type="button" data-accordion-trigger aria-expanded="false">
+            <span class="faq-question">What is the club trying to accomplish long term?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            The long-term goal is to build stronger teams at every age, retain more regional talent, and create a stable home for elite development in the Greater Lehigh Valley.
+          </div>
+        </article>
+        <article class="faq-item" data-reveal>
+          <button class="faq-trigger" type="button" data-accordion-trigger aria-expanded="false">
+            <span class="faq-question">How do tryouts fit into the new club model?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Tryouts are the main entry point into the 2026-27 structure, helping place players into the right environment within one connected pathway.
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="section" id="player-form">
       <div class="container form-layout">
         <div class="content-block" data-reveal>
-          <h2>Player Interest Form</h2>
-          <p>This form is intended for families and players who want more information about Penn Rising XI, tryouts, or the club structure.</p>
+          <span class="eyebrow">Connect</span>
+          <h2>player interest form</h2>
+          <p>Use this form for player interest, pathway questions, tryout follow-up, or general club inquiries. The form remains local/static, but the structure is now closer to the live site’s direct inquiry flow.</p>
+          <ul class="simple-list">
+            <li>Email: <a href="mailto:info@pennrisingxi.com">info@pennrisingxi.com</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/pennrisingxi/" target="_blank" rel="noreferrer">@pennrisingxi</a></li>
+          </ul>
         </div>
         <form class="form-panel" data-reveal>
           <div class="form-grid">
             <div class="field">
-              <label for="player-name">Player name</label>
-              <input id="player-name" name="player-name" type="text" placeholder="First and last name">
+              <label for="first-name">First Name</label>
+              <input id="first-name" name="first-name" type="text" placeholder="First Name" required>
             </div>
             <div class="field">
-              <label for="parent-name">Parent name</label>
-              <input id="parent-name" name="parent-name" type="text" placeholder="Parent or guardian">
+              <label for="last-name">Last Name</label>
+              <input id="last-name" name="last-name" type="text" placeholder="Last Name" required>
             </div>
             <div class="field">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="family@example.com">
+              <input id="email" name="email" type="email" placeholder="Email Address" required>
             </div>
             <div class="field">
-              <label for="birth-year">Birth year</label>
-              <select id="birth-year" name="birth-year">
-                <option value="">Select year</option>
-                <option>2018</option>
-                <option>2017</option>
-                <option>2016</option>
-                <option>2015</option>
-                <option>2014</option>
-                <option>2013</option>
-                <option>2012</option>
-                <option>2011</option>
-                <option>2010</option>
-                <option>2009</option>
-                <option>2008</option>
+              <label for="age-group">Age Group</label>
+              <select id="age-group" name="age-group">
+                <option value="">Select age group</option>
+                <option>U8-U10</option>
+                <option>U11-U12</option>
+                <option>U13-U15</option>
+                <option>U16-U19</option>
               </select>
             </div>
             <div class="field field-full">
-              <label for="current-club">Current club</label>
-              <input id="current-club" name="current-club" type="text" placeholder="Current team or club">
+              <label for="message">Tell Us More About Yourself</label>
+              <textarea id="message" name="message" placeholder="Questions, program interest, or background"></textarea>
             </div>
             <div class="field field-full">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Questions or additional information"></textarea>
+              <button class="btn btn-primary" type="submit">Submit</button>
             </div>
-          </div>
-          <div class="hero-actions">
-            <button class="btn btn-primary" type="submit">Send Inquiry</button>
           </div>
         </form>
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div><p class="brand-title">Penn Rising XI</p><p class="brand-subtitle">Semper Unum</p></div>
-        <div><ul class="footer-nav"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="tryouts.html">Tryouts</a></li><li><a href="teams.html">Teams</a></li><li><a href="news.html">News</a></li></ul></div>
-        <div><ul class="footer-links"><li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div>
+          <a class="brand" href="index.html" aria-label="Penn Rising XI home">
+            <img src="assets/2026_PennRisingXI_Logo.webp" alt="Penn Rising XI crest">
+            <div>
+              <p class="brand-title">Penn Rising XI</p>
+              <p class="brand-subtitle">Semper Unum</p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <ul class="footer-nav">
+            <li><a href="about.html">Philosophy</a></li>
+            <li><a href="pathway.html">Mission</a></li>
+            <li><a href="teams.html">The Badge</a></li>
+            <li><a href="tryouts.html">Tryouts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@pennrisingxi.com">Connect</a></li>
+            <li><a href="https://www.instagram.com/pennrisingxi/" target="_blank" rel="noreferrer">Instagram</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-bottom"><span>© 2026 Penn Rising XI</span><span>Semper Unum</span></div>
+      <div class="footer-bottom"><span>© 2026 Penn Rising XI</span><span>semper unum</span></div>
     </div>
   </footer>
   <script src="js/main.js"></script>

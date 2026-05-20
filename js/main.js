@@ -98,3 +98,16 @@ document.querySelectorAll("form").forEach((form) => {
     }, 2200);
   });
 });
+
+document.querySelectorAll("[data-accordion-trigger]").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const item = trigger.closest(".faq-item");
+
+    if (!item) {
+      return;
+    }
+
+    const isOpen = item.classList.toggle("open");
+    trigger.setAttribute("aria-expanded", String(isOpen));
+  });
+});
