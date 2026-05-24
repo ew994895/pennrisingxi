@@ -99,15 +99,51 @@ document.querySelectorAll("form").forEach((form) => {
   });
 });
 
+function setAccordionState(item, isOpen) {
+  const trigger = item.querySelector("[data-accordion-trigger]");
+  const answer = item.querySelector(".faq-answer");
+
+  if (!trigger || !answer) {
+    return;
+  }
+
+  item.classList.toggle("open", isOpen);
+  trigger.setAttribute("aria-expanded", String(isOpen));
+
+  if (isOpen) {
+    answer.style.maxHeight = `${answer.scrollHeight + 24}px`;
+  } else {
+    answer.style.maxHeight = "0px";
+  }
+}
+
+document.querySelectorAll(".faq-item").forEach((item) => {
+  setAccordionState(item, item.classList.contains("open"));
+});
+
 document.querySelectorAll("[data-accordion-trigger]").forEach((trigger) => {
   trigger.addEventListener("click", () => {
     const item = trigger.closest(".faq-item");
+    const group = trigger.closest(".faq-list");
 
-    if (!item) {
+    if (!item || !group) {
       return;
     }
 
-    const isOpen = item.classList.toggle("open");
-    trigger.setAttribute("aria-expanded", String(isOpen));
+    const willOpen = !item.classList.contains("open");
+
+    group.querySelectorAll(".faq-item").forEach((groupItem) => {
+      setAccordionState(groupItem, false);
+    });
+
+    if (willOpen) {
+      setAccordionState(item, true);
+    }
+  });
+});
+
+window.addEventListener("resize", () => {
+  document.querySelectorAll(".faq-item.open").forEach((item) => {
+    setAccordionState(item, true);
   });
 });
